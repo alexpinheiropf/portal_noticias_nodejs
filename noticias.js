@@ -5,13 +5,13 @@ var server = http.createServer( function(req, res){
     var categoria = req.url;//recuperando a requisição url
 
     if(categoria == '/tecnologia'){
-        es.end("<html><body>Portal de tecnologia</body></html>");
-    } else if (categoria == '/moda1') {
-        es.end("<html><body>Portal de moda</body></html>");
+        res.end("<html><body>Portal de tecnologia</body></html>");
+    } else if (categoria == '/moda') {
+        res.end("<html><body>Portal de moda</body></html>");
     } else if (categoria == '/beleza') {
-        es.end("<html><body>Portal de beleza</body></html>");
+        res.end("<html><body>Portal de beleza</body></html>");
     } else {
-        es.end("<html><body>Portal de noticias</body></html>");
+        res.end("<html><body>Portal de noticias</body></html>");
     }
 
 });
